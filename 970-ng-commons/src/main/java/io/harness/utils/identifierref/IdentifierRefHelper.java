@@ -162,7 +162,7 @@ public class IdentifierRefHelper {
     }
 
     if (isEmpty(scopedIdentifierConfig)) {
-      throw new InvalidIdentifierRefException("Empty identifier values are not supported");
+      throw new InvalidIdentifierRefException("Empty identifier values are not supported --> One or more optional input variables pointing to entities (such as connectors, etc...) are not being set.");
     }
 
     String[] identifierConfigStringSplit = scopedIdentifierConfig.split(IDENTIFIER_REF_DELIMITER);
